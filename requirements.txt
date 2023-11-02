@@ -1,2 +1,4 @@
 Django==4.2.3
 stripe==5.5.0
+
+python-dotenv~=1.0.0

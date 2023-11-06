@@ -24,7 +24,7 @@ def create_checkout_session(request):
         stripe.api_key = settings.STRIPE_SECRET_KEY
         try:
             # Създайте ценовата информация (Price) предварително в Stripe и използвайте идентификатора й.
-            price_id = 'price_1O7xxuA4yDkC17NurT02Ac2w'  # Заменете с идентификатора на вашата цена в Stripe
+            price_id = settings.PRICE_ID   # Заменете с идентификатора на вашата цена в Stripe
 
             checkout_session = stripe.checkout.Session.create(
                 success_url=domain_url + 'success?session_id={CHECKOUT_SESSION_ID}',

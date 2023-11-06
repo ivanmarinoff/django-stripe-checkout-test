@@ -136,3 +136,4 @@ STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY')
 
 # This is only required when using webhooks
 STRIPE_ENDPOINT_SECRET = os.getenv('STRIPE_ENDPOINT_SECRET')
+PRICE_ID = os.getenv('PRICE_ID')
